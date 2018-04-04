@@ -7,7 +7,11 @@ package dao;
 
 import entities.Countries;
 import entities.Departments;
+import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+import model.DepartmentsModel;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -50,9 +54,9 @@ public class DepartmentsDAO implements InterfaceDAO {
 
     @Override
     public List<Object> search(String category, String search) {
-        return fdao.getAll("FROM Deparments WHERE " + category + " LIKE '%" + search + "%'");
+        return fdao.getAll("FROM Departments WHERE " + category + " LIKE '%"+search+"%'");
     }
-
+    
     /**
      * menampilkan data berdasarkan id di departments
      *
@@ -63,4 +67,5 @@ public class DepartmentsDAO implements InterfaceDAO {
     public Object getById(String id) {
         return fdao.getById("from Departments where departmentId='" + id + "'");
     }
+    
 }

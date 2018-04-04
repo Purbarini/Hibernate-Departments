@@ -254,7 +254,7 @@ public class LathianORM {
 ////         */
 //        Countries countries = (Countries) new CountriesDAO().getById("BL");
 //        System.out.println(new CountriesDAO().delete(countries));
-//        Regions regions = new Regions();
+        Regions regions = new Regions();
         /**
          * insert untuk Regions
          */
@@ -264,7 +264,7 @@ public class LathianORM {
         /**
          * delete untuk Regions
          */
-//        System.out.println(new RegionsDAO().delete(BigDecimal.ZERO));
+        System.out.println(new RegionsDAO().delete(BigDecimal.ZERO));
         /**
          * delete untuk Locations
          */
@@ -274,8 +274,8 @@ public class LathianORM {
 ////        System.out.println(new DepartmentsDAO().insert(d));
 //        System.out.println(new DepartmentsDAO().delete(d.getDepartmentId()));
 //        
-//        Employees e = new Employees(280);
-//        e.setFirstName("Lala");
+//        Employees e = new Employees(207);
+//        e.setJobId(new Jobs("SA_REP"));
 //        System.out.println(new EmployeesDAO().insert(e));
 //        System.out.println(new DepartmentsDAO().delete(d.getDepartmentId()));
 
@@ -283,13 +283,14 @@ public class LathianORM {
 /**
  * Insert Employees 
  */
-//        Employees emp = new Employees(301, "wery", "CBA", new Date());
+//        Employees emp = new Employees(208, "cek", "Lala", new Date());
 //        emp.setJobId(new Jobs("SA_REP"));
 //        System.out.println(new EmployeesDAO().insert(emp));
 /**
  * Delete Employees
  */
-        System.out.println(new EmployeesDAO().delete("300"));
+
+//        System.out.println(new EmployeesDAO().delete(207));
         
 
 ///**
